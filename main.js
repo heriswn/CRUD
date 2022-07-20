@@ -64,7 +64,7 @@ let editPost = (e) => {
 };
 
 (()=>{
-  data = JSON.parse(localStorage.getItem("data"));
+  data = JSON.parse(localStorage.getItem("data")) || [];
   createPost();
   console.log(data);
 })();
